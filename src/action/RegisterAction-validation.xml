@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!DOCTYPE validators PUBLIC
+  	"-//Apache Struts//XWork Validator 1.0.3//EN"
+  	"http://struts.apache.org/dtds/xwork-validator-1.0.3.dtd">
+<validators>
+	<field name="name">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message key="name.null"></message>
+		</field-validator>
+		<field-validator type="stringlength">
+			<param name="maxLength">10</param>
+			<param name="minLength">4</param>
+			<message key="name.length"></message>
+		</field-validator>
+	</field>
+	
+	<field name="password">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message key="password.null"></message>
+		</field-validator>
+		<field-validator type="stringlength">
+			<param name="minLength">6</param>
+			<message key="password.length"></message>
+		</field-validator>
+	</field>
+	
+	<field name="repassword">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message key="repassword.null"></message>
+		</field-validator>
+		<field-validator type="fieldexpression">
+			<param name="expression">password==repassword</param>
+			<message key="repassword.same">两次密码不一致</message>
+		</field-validator>
+	</field>
+		
+	<field name="city">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message key="city.null"></message>
+		</field-validator>
+		<field-validator type="stringlength">
+			<param name="maxLength">30</param>
+			<message>通信地址长度不能超过${maxLength}</message>
+		</field-validator>
+	</field>
+	<field name="phone">
+		<field-validator type="stringlength">
+			<param name="maxLength">11</param>
+			<param name="minLength">7</param>
+			<message key="phone.length">手机号格式不正确！</message>
+		</field-validator>
+		
+	</field>
+	
+	<field name="sex">
+		<field-validator type="">
+			<param name=""></param>
+			<param name=""></param>
+			<message></message>
+		</field-validator>
+		
+	</field>
+</validators>

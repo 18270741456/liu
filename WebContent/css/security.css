@@ -1,0 +1,207 @@
+#content {
+	width:1200px;
+}
+
+#content .security_title {
+	font-family: Arial;
+	font-size: 34px;
+	font-weight: bold;
+	color: #000;
+	margin-bottom: 15px;
+	padding-bottom: 5px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #000;
+	margin-top: 5px;
+}
+#content .security_title2 {
+	font-size: 18px;
+	color: #FFF;
+	background-color: #FF871D;
+	margin-bottom: 15px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 15px;
+}
+#content .security_title3 {
+	font-size: 16px;
+	background-color: #EFEDED;
+	margin-bottom: 15px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 15px;
+	color: #000;
+}
+
+#side {
+	float: left;
+	width: 178px;
+	min-height: 600px;
+	background-color: #FFF;
+	border: 1px solid #D9D9D9;
+}
+#side .side_title {
+	font-size: 18px;
+	line-height: 45px;
+	background-image: url(../images/side_title_bg.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 45px;
+	margin-left: -5px;
+	padding-bottom: 4px;
+	padding-left: 60px;
+	color: #333;
+	margin-bottom: -2px;
+}
+
+#side ul.side_link:last-child {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #D9D9D9;
+}
+#side ul.side_link li {
+	font-size: 14px;
+	line-height: 45px;
+	background-color: #FAF7F4;
+	height: 45px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #D9D9D9;
+	position: relative;
+}
+#side ul.side_link li:last-child {
+	border-bottom-style: none;
+}
+#side ul.side_link li a {
+	display: block;
+	padding-left: 55px;
+}
+#side ul.side_link li a:hover {
+	background-color: #FFF!important;
+}
+#side ul.side_link li.active,#side ul.side_link li.active a {
+	color: #FF871D;
+	background-color: #FFF!important;
+}
+
+#side ul.side_link li a:hover:after {
+	width: 0;
+	height: 0px;
+	vertical-align: middle;
+	display: inline-block;
+	content: '';
+	border-left: 6px solid #FF9801;
+	border-top: 4px solid transparent;
+	border-bottom: 4px solid transparent;
+	position: absolute;
+	right: 20px;
+	margin-top: -3px;
+	top: 50%;
+}
+#side ul.side_link li.active:after {
+	width: 0;
+	height: 0px;
+	vertical-align: middle;
+	display: inline-block;
+	content: '';
+	border-left: 6px solid #FF9801;
+	border-top: 4px solid transparent;
+	border-bottom: 4px solid transparent;
+	position: absolute;
+	right: 20px;
+	margin-top: -3px;
+	top: 50%;
+}
+#main {
+	float: right;
+	width: 1008px;
+	min-height: 600px;
+	margin-left: -1px;
+	border: 1px solid #D9D9D9;
+	background-color: #FFF;
+}
+#main h3 {
+	font-size: 20px;
+	color: #333;
+	padding-top: 10px;
+	padding-bottom: 8px;
+	padding-left: 15px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #D9D9D9;
+	font-weight: normal;
+}
+#main dl.help dt {
+	color: #FF871D;
+	background-color: #F1F1F1;
+	margin-bottom: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 20px;
+}
+#main dl.help dd {
+	margin-bottom: 10px;
+	padding-left: 40px;
+}
+
+/*收缩菜单*/
+.vtitle{
+	height: 35px;
+	background: #FBBD74;
+	line-height: 35px;
+	margin-bottom: 2px;
+	padding-left: 60px;
+	font-size: 15px;
+	color: #FFFFFF;
+	font-family: \5FAE\8F6F\96C5\9ED1;
+	cursor: pointer;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #D9D9D9;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #D9D9D9;
+}
+.vtitle.select,.vtitle:hover{background-color:#F57C12;}
+.vtitle.h1{
+	background-image: url(../images/help_icon1.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+.vtitle.h2{
+	background-image: url(../images/help_icon2.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+.vtitle.h3{
+	background-image: url(../images/help_icon3.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+.vtitle.h4{
+	background-image: url(../images/help_icon4.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+.vtitle em{margin:10px 10px 0 0;}
+.vconlist{
+	margin-left: 20px;
+	margin-bottom: 10px;
+	margin-right: 20px;
+}
+.vconlist li a{
+	height: 30px;
+	line-height: 30px;
+	padding-left: 25px;
+	display: block;
+	font-size: 14px;
+	color: #866f67;
+	font-family: "\5FAE\8F6F\96C5\9ED1";
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #E9E9E9;
+}
+.vconlist li.select a,.vconlist li a:hover{color:#FF871D;text-decoration:none;}
+.vcon {
+	display:none;
+}

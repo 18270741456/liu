@@ -1,0 +1,8 @@
+/Dao/
+/action/
+/domain/
+/hibernate.cfg.xml
+/interceptor/
+/struts.xml
+/test/
+/util/

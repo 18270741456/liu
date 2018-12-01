@@ -1,0 +1,85 @@
+@charset "utf-8";
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	font-size: 12px;
+	line-height: 140%;
+	color: #555;
+	font-family: "微软雅黑";
+	background-color: #F4F4F4;
+}
+.clear {
+	font-size: 0px;
+	clear: both;
+	line-height: 0px;
+	height: 1px;
+}
+.clearfix:after {
+	/*
+	content: ".";
+	*/
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.clearfix {
+	min-height: 1px;
+}
+* html .clearfix {
+	height: 1px;/* Mac斉IE偺傒偵揔梡 \*//*/
+	height: auto;
+	overflow: hidden;
+	/**/
+}
+a:link {
+	TEXT-DECORATION: none;
+	color: #555;
+	outline: none;
+}
+a:visited {
+	TEXT-DECORATION: none;
+	color: #555;
+}
+a:hover {
+	TEXT-DECORATION: none;
+	color: #FF871D;
+	-webkit-transition: all 0.1s ease-in-out;
+	-moz-transition: all 0.1s ease-in-out;
+	-o-transition: all 0.1s ease-in-out;
+	transition: all 0.1s ease-in-out;
+}
+a:active {
+	TEXT-DECORATION: none;
+	color: #E86F00;
+}
+img {
+	border: none;
+	outline: none;
+	/*opacity: 1;*/
+}
+a:hover img {
+	opacity: 0.9;
+filter: progid:DXImageTransform.Microsoft.Alpha(Enabled=1, Style=0, Opacity=90);
+	-webkit-transition: all 0s ease-in-out;
+	-moz-transition: all 0s ease-in-out;
+	-o-transition: all 0s ease-in-out;
+	transition: all 0s ease-in-out;
+}
+ul, li, ol {
+	list-style-type: none;
+}
+p {
+	margin-bottom: 10px;
+}
+table {
+	border-collapse: collapse;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}

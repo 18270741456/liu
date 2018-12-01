@@ -1,0 +1,86 @@
+/* select */
+.selects{
+	position: relative;
+	display: inline-block;
+}
+.selects dt{
+	height: 28px!important;
+	display: inline-block;
+	border: 1px solid #CCCCCC!important;
+	line-height: 28px!important;
+	padding-left: 10px;
+	cursor: pointer;
+	width: 90px!important;
+	padding-right: 12px!important;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	position: relative;
+	z-index: 0;
+	background-color: #fcfcfb;
+	background-image: url(img/select.gif);
+	background-repeat: no-repeat;
+	background-position: right center;
+	float: none!important;
+	margin-bottom: 0px!important;
+	text-align: left!important;
+	font-weight: normal!important;
+}
+.selects dt.dt1{
+	height: 24px!important;
+}
+.selects dt.dt2{
+	height: 24px!important;
+	width: 220px!important;
+}
+.selects dt.dt3{
+	height: 24px!important;
+	width: 220px!important;
+	top: 8px;
+}
+.selects dt:hover,.select dt.cur{
+	border: 1px solid #FF871D!important;
+	box-shadow: 0 0 3px #FF871D;
+	background-image: url(img/select_o.gif);
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+.selects dd{
+	position: absolute;
+	left: 0;
+	top: 29px;
+	border: 1px solid #d2ccc4!important;
+	background: #fff;
+	display: none;
+	float: none!important;
+	height: auto!important;
+	width: auto!important;
+	margin-bottom: 0px!important;
+	z-index: 1;
+	padding: 0px!important;
+}
+.selects dd.dd1{
+	top: 25px;
+}
+.selects dd.dd2{
+	top: 25px;
+	width: 242px!important;
+}
+.selects dd.dd3{
+	top: 33px;
+	width: 242px!important;
+}
+.selects dd ul{padding:4px;width:104px;max-height:250px;overflow:auto;}
+.selects dd ul li{
+	padding: 0px!important;
+	border: none!important;
+	float: none!important;
+	text-align: left!important;
+}
+.selects dd ul li a{line-height:28px;display:block;padding:0 8px;}
+.selects dd.dd1 ul li a{line-height:24px;}
+.selects dd.dd2 ul{width: 236px!important;}
+.selects dd.dd2 ul li a{line-height:24px;}
+.selects dd.dd3 ul{width: 236px!important;}
+.selects dd.dd3 ul li a{line-height:24px;}
+.selects dd ul li a:hover{background:#f5f5f5;}
